@@ -7,7 +7,7 @@ AnimationExecutor::AnimationExecutor(Animation& animation, int delay)
 
 void AnimationExecutor::tick()
 {
-    if (GetElapsedTicks() < m_Delay / TICKS_PER_SECOND) return;
+    if (GetElapsedTicks() < m_Delay * TICKS_PER_SECOND) return;
     if (GetElapsedTicks() == 0 || GetElapsedTicks()%m_Animation.GetDelay() == 0)
     {
         m_Animation.GetSprite().SetFrame(m_Animation.GetFrame(m_CurrentFrame));
