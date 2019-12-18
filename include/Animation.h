@@ -1,12 +1,13 @@
 #ifndef ANIMATION_H
 #define ANIMATION_H
 
-#include "Frame.h"
+#include "Framesheet.h"
 #include "Sprite.h"
 
 class Animation
 {
     public:
+        Animation(Sprite sprite, int framesCount, Framesheet* framesheet, int* framesIndexes, int delay, bool loop = false);
         Animation(Sprite sprite, int framesCount, Frame* frames, int delay, bool loop = false);
         virtual ~Animation();
 
