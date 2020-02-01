@@ -23,7 +23,7 @@ Framesheet::Framesheet(wxBitmap bitmap, int frames, wxSize fSize)
 
 Framesheet::~Framesheet()
 {
-    delete this->m_Frames;
+    delete[] this->m_Frames;
 }
 
 Frame Framesheet::GetFrame(int index)
