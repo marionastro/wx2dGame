@@ -9,7 +9,7 @@ GameStage::GameStage(wxPanel* container)
 
 GameStage::~GameStage()
 {
-    delete this->m_Objects;
+    delete[] this->m_Objects;
 }
 
 void GameStage::tick()
