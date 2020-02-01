@@ -24,5 +24,5 @@ Animation::Animation(Sprite sprite, int framesCount, Frame* frames, int delay, b
 
 Animation::~Animation()
 {
-    delete this->m_Frames;
+    delete[] this->m_Frames;
 }
